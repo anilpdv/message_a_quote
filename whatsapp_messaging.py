@@ -6,7 +6,7 @@ import requests
 scheduler = BlockingScheduler()
 
 
-@scheduler.scheduled_job('interval', minutes=1)
+@scheduler.scheduled_job('interval', minutes=30)
 def msg_mom_and_dad(event=None, context=None):
 
     # get your sid and auth token from twilio
