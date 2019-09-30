@@ -18,7 +18,7 @@ def msg_mom_and_dad(event=None, context=None):
     # keep adding contacts to this dict to send
     # them the message
     contact_directory = {'daddy': '+918179608406'}
-    quote = requests.get('http://quotesapi.ml/random')
+    quote = requests.get('http://www.quotesapi.ml/random')
     data = quote.json()
 
     msg = data['quote'] + '  -  ' + data['author'].replace(',', '')
